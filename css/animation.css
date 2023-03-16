@@ -1,0 +1,28 @@
+@keyframes hem {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    100% {
+        top: -200%;
+        left: 0;
+    }
+}
+
+@keyframes dev {
+    0% {
+        justify-content: right;
+    }
+    100% {
+        justify-content: left;
+    }
+}
+
+@keyframes par {
+    0% {
+        top: 180px;
+    }
+    100% {
+        top: 160px;
+    }
+}

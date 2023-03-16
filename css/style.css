@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+}
+
+.main {
+    height: 700px;
+    width: 800px;
+    /* background-color: blue; */
+    margin: 0px auto;
+}
+
+.main .con1 {
+    height: 150px;
+    /* width: 50%; */
+    /* background-color: aqua; */
+    position: relative;
+}
+
+.main .con1 .hig {
+    height: 10px;
+    width: 30%;
+    background-color: #fff;
+    transform: rotate(-25deg);
+    position: absolute;
+    top: 180px;
+    left: 40px;
+    animation: par .3s 200;
+}
+
+.main .con1 .ha {
+    transform: rotate(25deg);
+    top: 180px;
+    left: 480px;
+}
+
+.main .con2 {
+    height: 500px;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .con2 .eye {
+    height: 400px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+    animation: dev 1s infinite;
+}
+
+.main .con2 .eye::after {
+    content: "";
+    height: 400px;
+    width: 300px;
+    background-color: #000;
+    /* border-radius: 50%; */
+    margin-right: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: hem 10s 4;
+}
+
+.main .con2 .eye .bol {
+    height: 100px;
+    width: 100px;
+    background-color: #000;
+    border-radius: 50%;
+    animation: dev 5s 20;
+}
